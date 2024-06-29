@@ -2,6 +2,7 @@ const bcrypt = require("bcrypt");
 // models
 const User = require("./../models/user.model");
 const Role = require("./../models/role.model");
+const Event = require("./../models/event.model");
 
 const findAllUsers = async (req, res) => {
   try {
@@ -118,8 +119,8 @@ const deleteUser = async (req, res) => {
         .json({ message: `El usuario con id ${id} no se encuentra` });
       return;
     }
-    // borrar tareas asociadas al usuario
-    await Task.deleteMany({ user: id });
+    // borrar eventos del usuario
+    await Event.deleteMany({ user: id });
     await User.deleteOne({ _id: id });
     res.status(204).json({ message: "Usuario eliminado con éxito" });
   } catch (error) {
