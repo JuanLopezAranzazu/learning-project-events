@@ -1,0 +1,31 @@
+header {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  height: 60px;
+  margin: auto;
+  max-width: var(--site-width);
+}
+
+.nav-link {
+  color: var(--light-color);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  color: #0056b3;
+}

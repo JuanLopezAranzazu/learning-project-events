@@ -1,0 +1,11 @@
+npm i
+
+devDependencies
+
+dependencies
+
+npm i react-router-dom
+npm i axios
+npm i sweetalert
+npm i redux react-redux redux-persist @reduxjs/toolkit
+npm i @mui/material @emotion/react @emotion/styled

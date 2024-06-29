@@ -1,0 +1,26 @@
+.event {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.event-list, .searchable-event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
