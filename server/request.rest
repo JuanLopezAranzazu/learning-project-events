@@ -1,0 +1,64 @@
+POST http://localhost:3001/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "admin123"
+}
+
+###
+
+POST http://localhost:3001/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "firstName": "Juan",
+  "lastName": "Lopez",
+  "email": "juan123@gmail.",
+  "password": "juan123"
+}
+
+###
+
+GET http://localhost:3001/api/v1/event
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgwM2IzYzU5ZTY5MTE0YTI2Mzg0YzkiLCJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE3MTk2OTMzODAsImV4cCI6MTcxOTc3OTc4MH0.xQnp_GfpAU2a9rql-C9FZ3LdFjh5XUtHjkmNwh2JoH8
+
+###
+
+GET http://localhost:3001/api/v1/event/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgwM2IzYzU5ZTY5MTE0YTI2Mzg0YzkiLCJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE3MTk2OTMzODAsImV4cCI6MTcxOTc3OTc4MH0.xQnp_GfpAU2a9rql-C9FZ3LdFjh5XUtHjkmNwh2JoH8
+
+###
+
+GET http://localhost:3001/api/v1/event/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgwM2IzYzU5ZTY5MTE0YTI2Mzg0YzkiLCJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE3MTk2OTMzODAsImV4cCI6MTcxOTc3OTc4MH0.xQnp_GfpAU2a9rql-C9FZ3LdFjh5XUtHjkmNwh2JoH8
+
+###
+
+POST http://localhost:3001/api/v1/event
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgwM2IzYzU5ZTY5MTE0YTI2Mzg0YzkiLCJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE3MTk2OTMzODAsImV4cCI6MTcxOTc3OTc4MH0.xQnp_GfpAU2a9rql-C9FZ3LdFjh5XUtHjkmNwh2JoH8
+
+{
+  "name": "Prueba 1",
+  "description": "Prueba 1",
+  "date": "2024-07-01T00:00:00.000Z"
+}
+
+###
+
+PUT http://localhost:3001/api/v1/event/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgwM2IzYzU5ZTY5MTE0YTI2Mzg0YzkiLCJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE3MTk2OTMzODAsImV4cCI6MTcxOTc3OTc4MH0.xQnp_GfpAU2a9rql-C9FZ3LdFjh5XUtHjkmNwh2JoH8
+
+{
+  "name": "Prueba 1 Modificado",
+  "description": "Prueba 1 Modificado",
+  "date": "2024-07-01T00:00:00.000Z"
+}
+
+###
+
+DELETE  http://localhost:3001/api/v1/event/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjgwM2IzYzU5ZTY5MTE0YTI2Mzg0YzkiLCJyb2xlcyI6WyJhZG1pbiJdLCJpYXQiOjE3MTk2OTMzODAsImV4cCI6MTcxOTc3OTc4MH0.xQnp_GfpAU2a9rql-C9FZ3LdFjh5XUtHjkmNwh2JoH8
+
